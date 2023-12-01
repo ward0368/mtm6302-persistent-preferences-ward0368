@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme') || 'theme1';
     const savedListStyle = localStorage.getItem('listStyle') || 'style1';
 
-    // Set the selected values and apply the saved theme to the body
+    // Sets the selected values and applies the saved theme to the body
     themeSelect.value = savedTheme;
     listStyleSelect.value = savedListStyle;
     document.body.className = savedTheme;
