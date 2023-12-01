@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Persistent Preferences</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+    <title>Persistent Preferences</title>
 </head>
+
 <body>
-   <div class="container">
-       <div class="list-section">
-           <h2>My List</h2>
-           <ul id="myList"></ul>
-       </div>
-       <div class="preferences-panel">
-           <h2>Preferences</h2>
-           <label for="theme">Select Theme:</label>
-           <select id="theme">
-               <option value="white">White</option>
-               <option value="black">Black</option>
-               <option value="yellow">Yellow</option>
-           </select>
-  
-           <label for="listStyle">Select List Style:</label>
-           <select id="listStyle">
-               <option value="style1">Style 1</option>
-               <option value="style2">Style 2</option>
-               <option value="style3">Style 3</option>
-           </select>
-       </div>
-   </div>
+    <!-- Main content of the webpage -->
+    <div class="container">
+        <!-- Section for displaying a list -->
+        <div class="list-section">
+            <h2>My List</h2>
+            <!-- Unordered list with an id attribute for JavaScript manipulation -->
+            <ul id="myList"></ul>
+        </div>
 
+        <!-- Section for user preferences -->
+        <div class="preferences-panel">
+            <h2>Preferences</h2>
 
-   <script src="script.js"></script>
+            <!-- Dropdown for selecting a theme with id attribute for JavaScript manipulation -->
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="yellow">Yellow</option>
+            </select>
+
+            <!-- Dropdown for selecting a list style with id attribute for JavaScript manipulation -->
+            <label for="listStyle">Select List Style:</label>
+            <select id="listStyle">
+                <option value="style1">Style 1</option>
+                <option value="style2">Style 2</option>
+                <option value="style3">Style 3</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- JavaScript file to enhance webpage functionality -->
+    <script src="script.js"></script>
 </body>
+
 </html>
